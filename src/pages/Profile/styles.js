@@ -26,6 +26,10 @@ export const Container = styled.div`
       &::placeholder {
         color: rgba(255, 255, 255, 0.7);
       }
+
+      &:focus {
+        border: 2px solid #7159c1;
+      }
     }
 
     span {
