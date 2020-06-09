@@ -44,15 +44,13 @@ export const Container = styled.div`
 
 export const Time = styled.li`
   padding: 20px;
-  border-radius: 4px;
-  border: 2px solid #212121;
-  background: #fff;
+  background: ${props => (props.avaliable ? '#fe546e' : '#FFE455')};
   opacity: ${props => (props.past ? 0.3 : 1)};
   transition: 0.5s;
 
   strong {
     display: block;
-    color: ${props => (props.avaliable ? '#999' : '#7159c1')};
+    color: ${props => (props.avaliable ? '#fff' : '#fe546e')};
     font-size: 20px;
     font-weight: normal;
   }
@@ -60,10 +58,11 @@ export const Time = styled.li`
   span {
     display: block;
     margin-top: 3px;
-    color: ${props => (props.avaliable ? '#999' : '#7159c1')};
+
+    color: ${props => (props.avaliable ? '#FFE455' : '#5c4477')};
   }
 
   &:hover {
-    border: 2px solid #7159c1;
+    box-shadow: 0px 0px 30px rgba(1, 1, 1, 0.6);
   }
 `;

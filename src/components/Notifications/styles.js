@@ -29,8 +29,9 @@ export const NotificationList = styled.div`
   position: absolute;
   width: 260px;
   left: calc(50% - 130px);
-  top: calc(100% + 30px);
-  background: rgba(0, 0, 0, 1);
+  top: calc(100% + 20px);
+  background: #fff;
+  box-shadow: 0px 5px 10px rgba(1, 1, 1, 0.5);
   border-radius: 4px;
   padding: 15px 5px;
   display: ${props => (props.visible ? 'block' : 'none')};
@@ -38,12 +39,12 @@ export const NotificationList = styled.div`
     content: '';
     position: absolute;
     left: calc(50% - 20px);
-    top: -20px;
+    top: -15px;
     width: 0;
     height: 0;
     border-left: 18px solid transparent;
     border-right: 18px solid transparent;
-    border-bottom: 18px solid rgba(0, 0, 0, 1);
+    border-bottom: 18px solid #fff;
   }
 `;
 
@@ -53,7 +54,7 @@ export const Scroll = styled(PerfectScrollbar)`
 `;
 
 export const Notification = styled.div`
-  color: #fff;
+  color: rgba(1, 1, 1, 0.8);
   & + div {
     margin-top: 15px;
     padding-top: 15px;
